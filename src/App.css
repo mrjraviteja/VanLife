@@ -10,6 +10,7 @@
     box-shadow: 0px 5px #888888;
     padding-left: 30px;
     padding-right: 30px;
+    background-color: #ecaa58;
 }
 
 .navbar > a{
@@ -40,4 +41,20 @@
     font-weight: 600;
     font-style: normal;
     color: #4D4D4D;
+}
+
+footer{
+    background-color: rgba(211, 176, 176, 0.5);
+    color: rgb(38, 175, 56);
+    font-family: 'Inter',sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    height: 33px;
+    display: flex;
+    flex-shrink: 0;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    border-radius: 33px;
 }

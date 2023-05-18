@@ -4,7 +4,7 @@
     padding-inline: 23px;
 }
 
-.van-list-container > h1{
+.van-list-container > center > h1{
     font-family: 'Inter',sans-serif;
     font-style: normal;
     font-weight: 700;

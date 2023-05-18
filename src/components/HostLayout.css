@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;700;800;900;&display=swap');
+
+.host-navbar{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: white;
+    color: rgb(0, 0, 0);
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    padding-top: 30px;
+}
+
+.host-navbar-links{
+    font-family: 'Inter',sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 20px;
+    color: black;
+}
+
+.host-navbar-links{
+    list-style: none;
+}
+
+.host-navbar-links > li{
+    display: inline-block;
+    margin: 0 30px;
+}
+
+.host-navbar-links > li > a{
+    text-decoration: none;
+    color: black;
+}
+
+.host-navbar-links > li > a:hover{
+    text-decoration: underline;
+}
