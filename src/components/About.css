@@ -3,6 +3,11 @@
     margin-top: 70px;
 }
 
+.about-main > img{
+    width: 600px;
+    height: 250px;
+}
+
 .about-main-text > h1{
     font-family: 'Inter',sans-serif;
     font-weight: 700;

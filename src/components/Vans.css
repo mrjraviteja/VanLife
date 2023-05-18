@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Prompt:wght@500&display=swap');
+
+.van-list-container{
+    padding-inline: 23px;
+}
+
+.van-list-container > h1{
+    font-family: 'Inter',sans-serif;
+    font-style: normal;
+    font-weight: 700;
+}
+
+.van-list{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    gap: 14px;
+    margin-top: 57px;
+}
+
+.van-tiles > a{
+    color: #161616;
+    text-decoration: none;    
+}
