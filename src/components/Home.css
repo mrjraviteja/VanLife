@@ -1,0 +1,45 @@
+.home-main{
+    background-image: url('../assets/image_53.png');
+    background-repeat: no-repeat;
+    width: 1100px;
+    height: 800px;
+    margin-left: 400px;
+    margin-top: 70px;
+    text-align: center;
+    padding-top: 200px;
+}
+
+.home-main > h1{
+    color: white;
+    font-family: 'Inter',sans-serif;
+    font-weight: 800;
+}
+
+.home-main > h2{
+    color: white;
+    font-family: 'Inter',sans-serif;
+    font-weight: 500;
+    width: 700px;
+    padding-left: 200px;
+    font-size: 20px;
+}
+
+.home-main > a{
+    background-color: #FF8C38;
+    border: none;
+    width: 400px;
+    border-radius: 5px;
+    color: white;
+    font-family: 'Inter',sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    padding-block: .75rem;
+}
+
+.home-main > a:hover{
+    box-shadow: inset 0 0 11px rgba(253, 253, 253, 0.589);
+}
