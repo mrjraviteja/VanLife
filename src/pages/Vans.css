@@ -22,3 +22,44 @@
     color: #161616;
     text-decoration: none;    
 }
+
+.van-list-filters{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+.van-list-filters > button{
+    cursor: pointer;
+}
+
+.van-list-filters > button:hover{
+    text-decoration: underline;
+    color: white;
+}
+
+.van-type.simple:hover, .van-type.simple.selected{
+    background-color: #e17654;
+}
+
+.van-type.rugged:hover, .van-type.rugged.selected{
+    background-color: #115E59;
+}
+
+.van-type.luxury:hover, .van-type.luxury.selected{
+    background-color: #161616;
+}
+
+.van-type.clear{
+    margin-left: -20px;
+    height: 34px;
+    padding: 6px 26px;
+    font-style: normal;
+    font-weight: 500;
+    border: none;
+    border-radius: 5px;
+    text-decoration: underline;
+    background-color: transparent;
+    color: #4D4D4D;
+}
