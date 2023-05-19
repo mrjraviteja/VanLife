@@ -43,6 +43,12 @@
     color: #4D4D4D;
 }
 
+.navbar-links > li > a.navbar-active{
+    font-weight: bold;
+    text-decoration: underline;
+    color: #161616;
+}
+
 footer{
     background-color: rgba(211, 176, 176, 0.5);
     color: rgb(38, 175, 56);
@@ -58,3 +64,4 @@ footer{
     margin-top: 10px;
     border-radius: 33px;
 }
+

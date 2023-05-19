@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700&display=swap');
+
+
+.hostvans-container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-family: 'Inter',sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    color: black;
+    padding-left: 70px;
+}
+
+.hostvans-link{
+    text-decoration: unset;
+    color: unset;
+}
+
+.hostvans-tile{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 90%;
+    height: 180px;
+    background-color: #FFF7ED;
+    padding-left: 50px;
+    border-radius: 5px;
+}
+
+.hostvans-tile > img{
+    width: 120px;
+    height: 120px;
+    border-radius: 5px;
+}
+
+.hostvans-tile-info > h2{
+    font-weight: 600;
+}
+
+.hostvans-tile-info > h3{
+    font-weight: 500;
+    color: #4d4d4d;
+}

@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;700&display=swap');
+
+.hostvan-detail-container{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-left: 300px;
+    padding-top: 40px;
+}
+
+.hostvan-detail-back{
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+}
+
+.hostvan-detail-back:hover{
+    text-decoration: underline;
+}
+
+.hostvan-detail-back > span{
+    font-family: 'Inter',sans-serif;
+    font-style: normal;
+    font-weight: 700;
+}
+
+.hostvan-detail-tile{
+    background-color: #fff7ed;
+    width: 60%;
+    border-radius: 5px;
+    padding-top: 20px;
+}
+
+.hostvan-detail-tile > h2{
+    font-family: 'Inter',sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    margin-left: 100px;
+}
+
+.hostvan-detail-cover{
+    display: flex;
+    margin-left: 50px;
+    align-items: center;
+}
+
+.hostvan-detail-cover > img{
+    width: 200px;
+    height: 200px;
+    border-radius: 5px;
+}
+
+.hostvan-detail-info{
+    flex-direction: column;
+    margin-left: 30px;
+}
+
+.hostvan-detail-info > h2{
+    font-family: 'Inter',sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.hostvan-detail-price{
+    font-family: 'Inter',sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+}
+
+.hostvan-detail-price > span{
+    font-weight: 700;
+}
+
+.hostvan-detail-type {
+    display: block;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    text-transform: capitalize;
+    height: 30px;
+    width: 90px;
+    text-align: center;
+    line-height: 30px;
+    font-style: normal;
+    font-weight: 500;
+    border: none;
+    border-radius: 5px;
+    background-color: #eb870d;
+    color: #050000;
+}
+
+.hostvan-detail-nav{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #fff7ed;
+    color: black;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    padding-top: 10px;
+}
+
+.hostvan-detail-nav-links{
+    font-family: 'Inter',sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.164);
+    list-style: none;
+}
+
+.hostvan-detail-nav-links > li{
+    display: inline-block;
+    margin: 0 30px;
+}
+
+.hostvan-detail-nav-links > li > a{
+    text-decoration: none;
+    color: rgba(100, 98, 98, 0.856);
+}
+
+.hostvan-detail-nav-links > li > a:hover{
+    text-decoration: underline;
+}
+
+.hostvan-detail-nav-links > li > a.hostvan-detail-nav-links-active{
+    font-weight: bold;
+    text-decoration: underline;
+    color: black;
+}
+
+.host-van-info{
+    margin-left: 70px;
+    font-family: 'Inter',sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.host-van-info > h4 > span{
+    font-weight: 500;
+    color: gray;
+}
+
+.host-van-pricing{
+    margin-left: 70px;
+    font-family: 'Inter',sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.host-van-pricing > h2 > span{
+    font-weight: 500;
+    font-size: 20px;
+    color: gray;
+}
+
+.host-van-photos{
+    margin-left: 70px;
+}
+
+.host-van-photos > img{
+    height: 150px;
+    width: 150px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}

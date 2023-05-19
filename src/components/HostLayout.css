@@ -16,10 +16,7 @@
     font-weight: 900;
     font-style: normal;
     font-size: 20px;
-    color: black;
-}
-
-.host-navbar-links{
+    color: rgba(0, 0, 0, 0.164);
     list-style: none;
 }
 
@@ -30,9 +27,15 @@
 
 .host-navbar-links > li > a{
     text-decoration: none;
-    color: black;
+    color: rgba(100, 98, 98, 0.856);
 }
 
 .host-navbar-links > li > a:hover{
     text-decoration: underline;
+}
+
+.host-navbar-links > li > a.host-navbar-links-active{
+    font-weight: bold;
+    text-decoration: underline;
+    color: black;
 }
