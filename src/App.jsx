@@ -3,6 +3,7 @@ import Home from './pages/Home'
 import About from './pages/About'
 import Vans from './pages/Vans'
 import VanDetail from './pages/VanDetail'
+import NotFound from './pages/NotFound'
 import Layout from './components/Layout'
 import HostLayout from './components/HostLayout'
 
@@ -22,8 +23,8 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route element={<Layout/>}>
-          <Route path='/' element={<Home/>} />
+        <Route path="/" element={<Layout/>}>
+          <Route index element={<Home/>} />
           <Route path='about' element={<About/>} />
           <Route path='vans' element={<Vans/>} />
           <Route path='vans/:id' element={<VanDetail/>} />
@@ -38,6 +39,7 @@ function App() {
               <Route path='photos' element={<HostVanPhotos/>} />
             </Route>
           </Route>
+          <Route path="*" element={<NotFound/>} />
         </Route>
       </Routes>
     </BrowserRouter>

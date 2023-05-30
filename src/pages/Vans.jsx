@@ -2,24 +2,46 @@ import './Vans.css'
 import Van from './Van'
 import React from 'react'
 import { useSearchParams } from 'react-router-dom'
+import { getVans } from '../api'
 
 function Vans(){
-    const[vanData, setVanData] = React.useState([])
-    const[searchParams, setSearchParams] = useSearchParams()
+    const [vanData, setVanData] = React.useState([])
+    const [searchParams, setSearchParams] = useSearchParams()
+    const [loading, setLoading] = React.useState(false)
+    const [error, setError] = React.useState(null)
 
     const typeFilter = searchParams.get("type")
 
     const displayedVans = typeFilter ? vanData.filter(char => char.type === typeFilter) : vanData
 
     React.useEffect(function() {
-        fetch("/api/vans")
-            .then(res => res.json())
-            .then(data => setVanData(data.vans))
+        async function loadVans(){
+            setLoading(true)
+            try{
+                const data = await getVans()
+                setVanData(data)
+            }
+            catch(err){
+                setError(err)
+            }
+            finally{
+                setLoading(false)
+            }
+        }
+        loadVans()
     }, [])
 
     const vanElements = displayedVans.map(van => {
         return <Van image={van.imageUrl} name={van.name} price={van.price} type={van.type} key={van.id} id={van.id} filter={searchParams.toString()} filtertype={typeFilter}/>
     })
+
+    if(loading){
+        return <h1>Loading...</h1>
+    }
+
+    if(error){
+        return <h1>There was an error: {error.message}</h1>
+    }
 
     return(
         <div className='van-list-container'>
